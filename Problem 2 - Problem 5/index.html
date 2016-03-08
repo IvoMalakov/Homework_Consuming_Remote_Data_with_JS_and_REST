@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework: Consuming Remote Data with JS and REST</title>
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Welcome to my demo page</h1>
+        <h2>I will show you how to consuming remote data with JS and REST using <span class="kinvey">Kinvey.com</span></h2>
+    </header>
+
+    <main>
+        <table id="book-table">
+            <thead>
+            <tr>
+                <th>
+                    <p>Title of the book</p>
+                </th>
+                <th>
+                    <p>Author of the book</p>
+                </th>
+                <th>
+                    <p>ISBN Number</p>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tbody-books"></tbody>
+        </table>
+
+        <form id="book-input-text">
+            <input type="text" id="book-title" placeholder="Enter a book's title here" />
+            <input type="text" id="book-author" placeholder="Enter a book's author  here" />
+            <input type="text" id="book-isbn" placeholder="Enter a book's ISBN here" />
+        </form>
+
+        <div id="button">
+            <form id="book-buttons">
+                <button type="button" id="create-book" name="create-book" class="create" value="Create a book">Create a book</button>
+                <button type="button" id="delete-book" name="delete-book" class="delete" value="Delete a book">Delete a book</button>
+                <button type="button" id="edit-book" name="edit-book" class="edit" value="Edit a book">Edit a book</button>
+            </form>
+        </div>
+    </main>
+</div>
+<script type="text/javascript" src="scripts/consuming-remote-data.js" defer></script>
+</body>
+</html>
